@@ -269,4 +269,23 @@ body {
     position: relative;
     padding: 10% 0 0 0; }
 
+.blurredImg {
+  height: 600px;
+  background: url("../img/scrollBackgroundImg.jpg");
+  background-size: cover;
+  text-align: center; }
+  .blurredImg p {
+    padding: 5% 0 0 0;
+    color: #fff;
+    font-size: 3.5em; }
+
+/* styles for ourTeam section */
+.ourTeam {
+  text-align: center; }
+
+.greyCircle {
+  width: 150px;
+  height: 150px;
+  border: 1px solid grey; }
+
 /*# sourceMappingURL=main.css.map */

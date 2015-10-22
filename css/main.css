@@ -95,20 +95,20 @@ body {
 
 /* focus section styling including main baxkground image and navigation*/
 .focus {
-  padding: 70px 0 0 0;
+  padding: 50px 0 0 0;
   text-align: center;
   font-weight: 300;
   background: url("../img/mainBackgroundPhoto.jpg");
   background-size: cover;
   color: #fff; }
   .focus h2 {
-    font-size: 4em;
+    font-size: 3.5em;
     padding: 0 0 60px 0; }
   .focus h4 {
-    font-size: 2.3em;
-    padding: 0 0 30px 0; }
+    font-size: 2em;
+    padding: 0 0 20px 0; }
   .focus p {
-    font-size: 1.2em; }
+    font-size: 1.1em; }
 
 .pictureNav {
   padding: 70px 0 0 0; }
@@ -276,7 +276,8 @@ body {
   text-align: center; }
   .blurredImg .container {
     position: relative;
-    top: 150px; }
+    top: 50%;
+    transform: translateY(-50%); }
   .blurredImg p {
     padding: 5% 0 0 0;
     color: #fff;
@@ -284,16 +285,14 @@ body {
 
 /* styles for ourTeam section */
 .ourTeam {
+  margin: 0 0 100px 0;
   text-align: center; }
   .ourTeam h3 {
-    padding: 100px 0 0 0;
+    margin: 100px 0 100px 0;
     font-size: 3em; }
   .ourTeam h4 {
     font-size: 1.4em;
     display: inline-block; }
-
-.arrows {
-  padding: 120px 0 60px 0; }
 
 .greyCircle {
   width: 180px;
@@ -321,7 +320,7 @@ body {
       left: 12px; }
 
 .skills {
-  padding: 0 0 50px 0; }
+  padding: 0 0 30px 0; }
   .skills .left h4, .skills .right h4 {
     float: left; }
   .skills .left span, .skills .right span {
@@ -356,6 +355,8 @@ body {
 /* styles for portfolio */
 .ourPortfolio {
   margin: 150px 0 0 0; }
+  .ourPortfolio .thumbnail {
+    height: 336px; }
   .ourPortfolio img {
     width: 100%;
     height: auto; }

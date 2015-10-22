@@ -2,12 +2,23 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
-
+  font-family: 'Lato', sans-serif;
+  color: map_get($myColors, mainFontColor);
 }
+
+.purple {
+  color: map_get($myColors, mainPurple);
+}
+
+.active {
+  background-color: map_get($myColors, mainPurple);
+}
+
+
 
 /* my 12 column grid */
 
@@ -105,7 +116,234 @@ body {
 
 .row {
   width: $row;
-  margin: 0 0 20px 0;
+}
+
+/* focus section styling including main baxkground image and navigation*/
+
+.focus {
+  padding: 70px 0 0 0;
+  text-align: center;
+  font-weight: 300;
+  background: url("../img/mainBackgroundPhoto.jpg");
+  background-size: cover;
+  color: map_get($myColors, white);
+  h2 {
+    font-size: 4em;
+    padding: 0 0 60px 0;
+  }
+  h4 {
+    font-size: 2.3em;
+    padding: 0 0 30px 0;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.pictureNav {
+  padding: 70px 0 0 0;
+}
+
+.services {
+  a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    color: map_get($myColors, white);
+  }
+  height: 180px;
+  background: url("../img/border.png") center;
+  position: relative;
+  .innerServices {
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    p {
+      color: map_get($myColors, white);
+    }
+  }
 }
 
 
+.portfolio {
+  a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    color: map_get($myColors, white);
+  }
+  height: 180px;
+  background: url("../img/border.png") center;
+  position: relative;
+  .innerPortfolio {
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    p {
+      color: map_get($myColors, white);
+    }
+  }
+}
+
+.about {
+  a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    color: map_get($myColors, white);
+  }
+  height: 180px;
+  background: url("../img/border.png") center;
+  position: relative;
+  .innerAbout {
+    position: absolute;
+    top: 45px;
+    left: 55px;
+    p {
+      color: map_get($myColors, white);
+    }
+  }
+}
+
+.team {
+  a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    color: map_get($myColors, white);
+  }
+  height: 180px;
+  background: url("../img/border.png") center;
+  position: relative;
+  .innerTeam {
+    position: absolute;
+    top: 45px;
+    left: 55px;
+    p {
+      color: map_get($myColors, white);
+    }
+  }
+}
+
+.blog {
+  a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    color: map_get($myColors, white);
+  }
+  height: 180px;
+  background: url("../img/border.png") center;
+  position: relative;
+  .innerBlog {
+    position: absolute;
+    top: 45px;
+    left: 55px;
+    p {
+      color: map_get($myColors, white);
+    }
+  }
+}
+
+.contact {
+  a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    color: map_get($myColors, white);
+  }
+  height: 180px;
+  background: url("../img/border.png") center;
+  position: relative;
+  .innerContact {
+    position: absolute;
+    top: 45px;
+    left: 55px;
+    p {
+      color: map_get($myColors, white);
+    }
+  }
+}
+
+.arrowDown {
+  padding: 0 0 7% 0;
+}
+
+.mainNav {
+  h2 {
+    position: relative;
+    bottom: 7px;
+  }
+  ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    li {
+      float: left;
+      padding: 0 15px 0 15px;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: map_get($myColors, mainFontColor);
+      &:hover {
+        color: map_get($myColors, mainPurple);
+      }
+    }
+  }
+  .row {
+    padding: 5% 0 4% 0;
+  }
+}
+
+/* styles for section features */
+
+.features {
+  div {
+    padding: 0 5px 0 5px;
+  }
+  h3 {
+    padding: 20% 0 20% 0;
+    font-size: 1.5em;
+  }
+  p {
+    line-height: 2;
+  }
+  padding: 8% 0 8% 0;
+  text-align: center;
+  background-color: map_get($myColors, lightGreyBackground);
+}
+
+
+/* styles for section aboutUs */
+
+.aboutUs {
+  padding: 8% 0 8% 0;
+  .title {
+    text-align: center;
+    h3 {
+      font-size: 3em;
+      display: inline-block;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  a.button {
+    text-align: center;
+    text-decoration: none;
+    color: map_get($myColors, white);
+    display: block;
+    width: 200px;
+    padding: 19px 10px 19px 10px;
+    border-radius: 5px;
+    background-color: map_get($myColors, mainPurple);
+    position: absolute;
+    bottom: 0;
+
+  }
+  .aboutUsText {
+    position: relative;
+    padding: 10% 0 0 0;
+  }
+}

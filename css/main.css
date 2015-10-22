@@ -274,6 +274,9 @@ body {
   background: url("../img/scrollBackgroundImg.jpg");
   background-size: cover;
   text-align: center; }
+  .blurredImg .container {
+    position: relative;
+    top: 150px; }
   .blurredImg p {
     padding: 5% 0 0 0;
     color: #fff;
@@ -285,6 +288,9 @@ body {
   .ourTeam h3 {
     padding: 100px 0 0 0;
     font-size: 3em; }
+  .ourTeam h4 {
+    font-size: 1.4em;
+    display: inline-block; }
 
 .arrows {
   padding: 120px 0 60px 0; }
@@ -313,5 +319,50 @@ body {
       position: absolute;
       top: 5px;
       left: 12px; }
+
+.skills {
+  padding: 0 0 50px 0; }
+  .skills .left h4, .skills .right h4 {
+    float: left; }
+  .skills .left span, .skills .right span {
+    float: right; }
+  .skills span {
+    padding: 0 0 0 30px; }
+  .skills .skillBar {
+    height: 20px;
+    background-color: #cdcdcd; }
+    .skills .skillBar p.skillBar1 {
+      height: 20px;
+      background-color: #9f449b;
+      width: 90%; }
+    .skills .skillBar p.skillBar2 {
+      height: 20px;
+      background-color: #9f449b;
+      width: 70%; }
+    .skills .skillBar p.skillBar3 {
+      height: 20px;
+      background-color: #9f449b;
+      width: 75%; }
+    .skills .skillBar p.skillBar4 {
+      height: 20px;
+      background-color: #9f449b;
+      width: 85%; }
+
+/* styles for services */
+.ourServices {
+  background-color: #eee;
+  text-align: center; }
+
+/* styles for portfolio */
+.ourPortfolio {
+  margin: 150px 0 0 0; }
+  .ourPortfolio img {
+    width: 100%;
+    height: auto; }
+  .ourPortfolio h3 {
+    text-align: center; }
+
+.mainFooter {
+  margin: 300px 0 0 0; }
 
 /*# sourceMappingURL=main.css.map */

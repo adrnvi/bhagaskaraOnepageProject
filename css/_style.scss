@@ -353,6 +353,10 @@ body {
   background: url("../img/scrollBackgroundImg.jpg");
   background-size: cover;
   text-align: center;
+  .container {
+    position: relative;
+    top: 150px;
+  }
 
   p {
     padding: 5% 0 0 0;
@@ -368,6 +372,10 @@ body {
   h3 {
     padding: 100px 0 0 0;
     font-size: 3em;
+  }
+  h4 {
+    font-size: 1.4em;
+    display: inline-block;
   }
 }
 
@@ -405,9 +413,69 @@ body {
   }
 }
 
+.skills {
+  padding: 0 0 50px 0;
+  .left, .right {
+    h4 {
+      float: left;
+    }
+    span {
+      float: right;
+    }
+  }
+  span {
+    padding: 0 0 0 30px;
+  }
+  .skillBar {
+    height:20px;
+    background-color: map_get($myColors, greyCircle);
+    p.skillBar1 {
+      height: 20px;
+      background-color: map_get($myColors, mainPurple);
+      width: 90%;
+    }
+    p.skillBar2 {
+      height: 20px;
+      background-color: map_get($myColors, mainPurple);
+      width: 70%;
+    }
+    p.skillBar3 {
+      height: 20px;
+      background-color: map_get($myColors, mainPurple);
+      width: 75%;
+    }
+    p.skillBar4 {
+      height: 20px;
+      background-color: map_get($myColors, mainPurple);
+      width: 85%;
+    }
+  }
+}
 
 
+/* styles for services */
+
+.ourServices {
+  background-color: map_get($myColors, lightGreyBackground);
+  text-align: center;
+}
 
 
+/* styles for portfolio */
 
 
+.ourPortfolio {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  margin: 150px 0 0 0;
+  h3 {
+    text-align: center;
+  }
+}
+
+
+.mainFooter {
+  margin: 300px 0 0 0;
+}

@@ -365,14 +365,47 @@ body {
 
 .ourTeam {
   text-align: center;
+  h3 {
+    padding: 100px 0 0 0;
+    font-size: 3em;
+  }
+}
 
+.arrows {
+  padding: 120px 0 60px 0;
 }
 
 .greyCircle {
-  width:150px;
-  height: 150px;
-  border: 1px solid grey;
+  width:180px;
+  height: 180px;
+  background-color: map_get($myColors, greyCircle);
+  border-radius: 50%;
+  margin: 60px auto;
 }
+.socials {
+   padding: 20px 0 20px 0;
+  .socialIcon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid map_get($myColors, greyCircle);
+    position: relative;
+    &:first-child {
+      margin-right: 5px;
+    }
+    &:nth-child(1) {
+      margin-left: 5px;
+    }
+    .innerIcon {
+      position: absolute;
+      top: 5px;
+      left: 12px;
+    }
+  }
+}
+
+
 
 
 

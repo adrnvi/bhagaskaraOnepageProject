@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato:400,300,100', sans-serif;
+  font-weight: 100;
   color: map_get($myColors, mainFontColor);
 }
 
@@ -19,6 +20,33 @@ body {
 }
 
 
+.buttonActive {
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: map_get($myColors, white);
+  display: inline-block;
+  width: 70px;
+  padding: 6px 0 6px 0;
+  border-radius: 5px;
+  background-color: map_get($myColors, mainPurple);
+
+}
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  color: map_get($myColors, mainFontColor);
+  display: inline-block;
+  width: 70px;
+  padding: 6px 0 6px 0;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.align {
+  text-align: center;
+}
 
 /* my 12 column grid */
 
@@ -121,22 +149,23 @@ body {
 /* focus section styling including main baxkground image and navigation*/
 
 .focus {
-  padding: 50px 0 0 0;
+  padding: 50px 0 75px 0;
   text-align: center;
-  font-weight: 300;
   background: url("../img/mainBackgroundPhoto.jpg");
   background-size: cover;
   color: map_get($myColors, white);
   h2 {
-    font-size: 3.5em;
+    font-size: 3.6em;
+    font-weight: 100;
     padding: 0 0 60px 0;
   }
   h4 {
-    font-size: 2em;
+    font-size: 2.2em;
+    font-weight: 100;
     padding: 0 0 20px 0;
   }
   p {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 }
 
@@ -157,7 +186,7 @@ body {
   .innerServices {
     position: absolute;
     top: 45px;
-    left: 50px;
+    left: 45px;
     p {
       color: map_get($myColors, white);
     }
@@ -178,7 +207,7 @@ body {
   .innerPortfolio {
     position: absolute;
     top: 45px;
-    left: 50px;
+    left: 45px;
     p {
       color: map_get($myColors, white);
     }
@@ -258,7 +287,7 @@ body {
   .innerContact {
     position: absolute;
     top: 45px;
-    left: 55px;
+    left: 45px;
     p {
       color: map_get($myColors, white);
     }
@@ -266,13 +295,18 @@ body {
 }
 
 .arrowDown {
-  padding: 0 0 7% 0;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  background: url("../img/arrowDown.png");
 }
 
 .mainNav {
   h2 {
     position: relative;
     bottom: 7px;
+    font-weight: 100;
+    font-size: 1.9em;
   }
   ul {
     list-style-type: none;
@@ -284,8 +318,16 @@ body {
     a {
       display: block;
       text-decoration: none;
+      font-weight: 400;
+      font-size: 1.05em;
       color: map_get($myColors, mainFontColor);
       &:hover {
+        color: map_get($myColors, mainPurple);
+      }
+      &:active {
+        color: map_get($myColors, mainPurple);
+      }
+      &:focus {
         color: map_get($myColors, mainPurple);
       }
     }
@@ -304,6 +346,7 @@ body {
   h3 {
     padding: 20% 0 20% 0;
     font-size: 1.5em;
+    font-weight: 100;
   }
   p {
     line-height: 2;
@@ -323,6 +366,7 @@ body {
     h3 {
       font-size: 3em;
       display: inline-block;
+      font-weight: 100;
     }
   }
   img {
@@ -333,18 +377,23 @@ body {
     text-align: center;
     text-decoration: none;
     color: map_get($myColors, white);
+    font-weight: 400;
     display: block;
     width: 200px;
     padding: 19px 10px 19px 10px;
     border-radius: 5px;
     background-color: map_get($myColors, mainPurple);
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
 
   }
   .aboutUsText {
     position: relative;
     padding: 10% 0 0 0;
+    line-height: 2;
+    .aboutUsDescription {
+      padding: 0 0 0 10px;
+    }
   }
 }
 
@@ -373,6 +422,7 @@ body {
   h3 {
     margin: 100px 0 100px 0;
     font-size: 3em;
+    font-weight: 100;
   }
   h4 {
     font-size: 1.4em;
@@ -401,8 +451,8 @@ body {
     &:first-child {
       margin-right: 5px;
     }
-    &:nth-child(1) {
-      margin-left: 5px;
+    &:nth-child(2) {
+      margin-right: 5px;
     }
     .innerIcon {
       position: absolute;
@@ -458,6 +508,53 @@ body {
 .ourServices {
   background-color: map_get($myColors, lightGreyBackground);
   text-align: center;
+  padding: 0 0 100px 0;
+  .servicesInNumbers {
+    padding: 100px 0 0 0;
+    p {
+      font-size: 3em;
+      letter-spacing: -2px;
+      color: map_get($myColors, black);
+    }
+    footer {
+      padding: 10px 0 0 0;
+      font-size: 0.8em;
+    }
+  }
+  .servicesCircle {
+    padding: 50px 0 0 0;
+    .greyCircle {
+      height: 150px;
+      width: 150px;
+      background-color: map_get($myColors, darkerGreyCircle);
+      margin: 40px auto;
+    }
+    p {
+      font-size: 1.5em;
+      font-weight: 400;
+      padding: 0 0 20px 0;
+    }
+    footer {
+      font-weight: 700;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      padding: 0 0 35px 0
+    }
+  }
+  .smallCircle {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid;
+    border-radius: 50%;
+  }
+  .smallGreyCircle {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: map_get($myColors, mainFontColor);
+    border-radius: 50%;
+  }
 }
 
 
@@ -465,20 +562,109 @@ body {
 
 
 .ourPortfolio {
+  h3 {
+    margin: 0 0 100px 0;
+    font-size: 3em;
+    font-weight: 100;
+  }
   .thumbnail {
-    height: 336px;
+    height: 345px;
   }
   img {
     width: 100%;
     height: auto;
   }
-  margin: 150px 0 0 0;
+  margin: 100px 0 0 0;
   h3 {
     text-align: center;
+    font-weight: 100;
+  }
+  .iconsRow {
+    padding: 0 0 50px 0;
+    .icons {
+      text-align: center;
+      a {
+        margin: 0 10px 0 10px;
+        text-transform: uppercase;
+      }
+  }
+  }
+  .portfolioImages {
+    text-align: center;
+    img {
+      padding: 0 0 10px 0;
+    }
+    p {
+      font-size: 1.3em;
+      color: map_get($myColors, black);
+      letter-spacing: -1px;
+      padding: 0 0 3px 0;
+    }
+    footer {
+      color: map_get($myColors, darkGrey);
+      font-size: 0.9em;
+      padding: 0 0 28px 0;
+    }
+  }
+  .portfolioButton {
+    padding: 30px 0 0 0;
+    a {
+      @extend .buttonActive;
+      width: 175px;
+      padding: 22px 0 22px 0;
+    }
   }
 }
 
 
 .mainFooter {
-  margin: 300px 0 0 0;
+  .socialIcon {
+    height:70px;
+    width: 70px;
+    font-size: 2em;
+    &:first-child, &:nth-child(2), &:nth-child(3) {
+      margin: 0 30px 0 0;
+    }
+    .innerIcon {
+      position: absolute;
+      top: 15px;
+      left: 28px;
+    }
+  }
+  h3 {
+    font-size: 3em;
+    margin: 100px 0 100px 0;
+    font-weight: 100;
+  }
+  .formBlock {
+    font-size: 18px;
+    color: map_get($myColors, black);
+    display: block;
+    background-color: map_get($myColors, white);
+    border: 1px solid map_get($myColors, mainFontColor);
+    width: 90%;
+    padding: 20px 25px 20px 25px;
+    margin: 0 0 30px 0;
+    &:nth-child(3) {
+      height: 250px;
+    }
+  }
+  .buttonActive {
+    @extend .buttonActive;
+    width: 200px;
+    padding: 20px 25px;
+    font-weight: 400;
+  }
+  .footerInfo {
+    p {
+      font-size: 1.3em;
+      margin: 0 0 40px 0;
+      color: map_get($myColors, black);
+    }
+    .addressInfo {
+      font-size: 1.5em;
+      font-weight: 400;
+    }
+
+  }
 }

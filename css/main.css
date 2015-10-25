@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato:400,300,100', sans-serif;
+  font-weight: 100;
   color: #676767; }
 
 .purple {
@@ -12,6 +13,30 @@ body {
 
 .active {
   background-color: #9f449b; }
+
+.buttonActive, .ourPortfolio .portfolioButton a, .mainFooter .buttonActive {
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  width: 70px;
+  padding: 6px 0 6px 0;
+  border-radius: 5px;
+  background-color: #9f449b; }
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  color: #676767;
+  display: inline-block;
+  width: 70px;
+  padding: 6px 0 6px 0;
+  border-radius: 5px;
+  border: 1px solid; }
+
+.align {
+  text-align: center; }
 
 /* my 12 column grid */
 .col-1 {
@@ -95,20 +120,21 @@ body {
 
 /* focus section styling including main baxkground image and navigation*/
 .focus {
-  padding: 50px 0 0 0;
+  padding: 50px 0 75px 0;
   text-align: center;
-  font-weight: 300;
   background: url("../img/mainBackgroundPhoto.jpg");
   background-size: cover;
   color: #fff; }
   .focus h2 {
-    font-size: 3.5em;
+    font-size: 3.6em;
+    font-weight: 100;
     padding: 0 0 60px 0; }
   .focus h4 {
-    font-size: 2em;
+    font-size: 2.2em;
+    font-weight: 100;
     padding: 0 0 20px 0; }
   .focus p {
-    font-size: 1.1em; }
+    font-size: 1.2em; }
 
 .pictureNav {
   padding: 70px 0 0 0; }
@@ -125,7 +151,7 @@ body {
   .services .innerServices {
     position: absolute;
     top: 45px;
-    left: 50px; }
+    left: 45px; }
     .services .innerServices p {
       color: #fff; }
 
@@ -141,7 +167,7 @@ body {
   .portfolio .innerPortfolio {
     position: absolute;
     top: 45px;
-    left: 50px; }
+    left: 45px; }
     .portfolio .innerPortfolio p {
       color: #fff; }
 
@@ -205,16 +231,21 @@ body {
   .contact .innerContact {
     position: absolute;
     top: 45px;
-    left: 55px; }
+    left: 45px; }
     .contact .innerContact p {
       color: #fff; }
 
 .arrowDown {
-  padding: 0 0 7% 0; }
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  background: url("../img/arrowDown.png"); }
 
 .mainNav h2 {
   position: relative;
-  bottom: 7px; }
+  bottom: 7px;
+  font-weight: 100;
+  font-size: 1.9em; }
 .mainNav ul {
   list-style-type: none;
   text-transform: uppercase; }
@@ -224,8 +255,14 @@ body {
   .mainNav ul a {
     display: block;
     text-decoration: none;
+    font-weight: 400;
+    font-size: 1.05em;
     color: #676767; }
     .mainNav ul a:hover {
+      color: #9f449b; }
+    .mainNav ul a:active {
+      color: #9f449b; }
+    .mainNav ul a:focus {
       color: #9f449b; }
 .mainNav .row {
   padding: 5% 0 4% 0; }
@@ -239,7 +276,8 @@ body {
     padding: 0 5px 0 5px; }
   .features h3 {
     padding: 20% 0 20% 0;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    font-weight: 100; }
   .features p {
     line-height: 2; }
 
@@ -250,7 +288,8 @@ body {
     text-align: center; }
     .aboutUs .title h3 {
       font-size: 3em;
-      display: inline-block; }
+      display: inline-block;
+      font-weight: 100; }
   .aboutUs img {
     width: 100%;
     height: auto; }
@@ -258,16 +297,20 @@ body {
     text-align: center;
     text-decoration: none;
     color: #fff;
+    font-weight: 400;
     display: block;
     width: 200px;
     padding: 19px 10px 19px 10px;
     border-radius: 5px;
     background-color: #9f449b;
     position: absolute;
-    bottom: 0; }
+    bottom: 15px; }
   .aboutUs .aboutUsText {
     position: relative;
-    padding: 10% 0 0 0; }
+    padding: 10% 0 0 0;
+    line-height: 2; }
+    .aboutUs .aboutUsText .aboutUsDescription {
+      padding: 0 0 0 10px; }
 
 .blurredImg {
   height: 600px;
@@ -289,7 +332,8 @@ body {
   text-align: center; }
   .ourTeam h3 {
     margin: 100px 0 100px 0;
-    font-size: 3em; }
+    font-size: 3em;
+    font-weight: 100; }
   .ourTeam h4 {
     font-size: 1.4em;
     display: inline-block; }
@@ -312,8 +356,8 @@ body {
     position: relative; }
     .socials .socialIcon:first-child {
       margin-right: 5px; }
-    .socials .socialIcon:nth-child(1) {
-      margin-left: 5px; }
+    .socials .socialIcon:nth-child(2) {
+      margin-right: 5px; }
     .socials .socialIcon .innerIcon {
       position: absolute;
       top: 5px;
@@ -350,20 +394,122 @@ body {
 /* styles for services */
 .ourServices {
   background-color: #eee;
-  text-align: center; }
+  text-align: center;
+  padding: 0 0 100px 0; }
+  .ourServices .servicesInNumbers {
+    padding: 100px 0 0 0; }
+    .ourServices .servicesInNumbers p {
+      font-size: 3em;
+      letter-spacing: -2px;
+      color: #000; }
+    .ourServices .servicesInNumbers footer {
+      padding: 10px 0 0 0;
+      font-size: 0.8em; }
+  .ourServices .servicesCircle {
+    padding: 50px 0 0 0; }
+    .ourServices .servicesCircle .greyCircle {
+      height: 150px;
+      width: 150px;
+      background-color: #aaa;
+      margin: 40px auto; }
+    .ourServices .servicesCircle p {
+      font-size: 1.5em;
+      font-weight: 400;
+      padding: 0 0 20px 0; }
+    .ourServices .servicesCircle footer {
+      font-weight: 700;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      padding: 0 0 35px 0; }
+  .ourServices .smallCircle {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid;
+    border-radius: 50%; }
+  .ourServices .smallGreyCircle {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: #676767;
+    border-radius: 50%; }
 
 /* styles for portfolio */
 .ourPortfolio {
-  margin: 150px 0 0 0; }
+  margin: 100px 0 0 0; }
+  .ourPortfolio h3 {
+    margin: 0 0 100px 0;
+    font-size: 3em;
+    font-weight: 100; }
   .ourPortfolio .thumbnail {
-    height: 336px; }
+    height: 345px; }
   .ourPortfolio img {
     width: 100%;
     height: auto; }
   .ourPortfolio h3 {
+    text-align: center;
+    font-weight: 100; }
+  .ourPortfolio .iconsRow {
+    padding: 0 0 50px 0; }
+    .ourPortfolio .iconsRow .icons {
+      text-align: center; }
+      .ourPortfolio .iconsRow .icons a {
+        margin: 0 10px 0 10px;
+        text-transform: uppercase; }
+  .ourPortfolio .portfolioImages {
     text-align: center; }
+    .ourPortfolio .portfolioImages img {
+      padding: 0 0 10px 0; }
+    .ourPortfolio .portfolioImages p {
+      font-size: 1.3em;
+      color: #000;
+      letter-spacing: -1px;
+      padding: 0 0 3px 0; }
+    .ourPortfolio .portfolioImages footer {
+      color: #222;
+      font-size: 0.9em;
+      padding: 0 0 28px 0; }
+  .ourPortfolio .portfolioButton {
+    padding: 30px 0 0 0; }
+    .ourPortfolio .portfolioButton a {
+      width: 175px;
+      padding: 22px 0 22px 0; }
 
-.mainFooter {
-  margin: 300px 0 0 0; }
+.mainFooter .socialIcon {
+  height: 70px;
+  width: 70px;
+  font-size: 2em; }
+  .mainFooter .socialIcon:first-child, .mainFooter .socialIcon:nth-child(2), .mainFooter .socialIcon:nth-child(3) {
+    margin: 0 30px 0 0; }
+  .mainFooter .socialIcon .innerIcon {
+    position: absolute;
+    top: 15px;
+    left: 28px; }
+.mainFooter h3 {
+  font-size: 3em;
+  margin: 100px 0 100px 0;
+  font-weight: 100; }
+.mainFooter .formBlock {
+  font-size: 18px;
+  color: #000;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #676767;
+  width: 90%;
+  padding: 20px 25px 20px 25px;
+  margin: 0 0 30px 0; }
+  .mainFooter .formBlock:nth-child(3) {
+    height: 250px; }
+.mainFooter .ourPortfolio .portfolioButton a, .ourPortfolio .portfolioButton .mainFooter a, .mainFooter .buttonActive {
+  width: 200px;
+  padding: 20px 25px;
+  font-weight: 400; }
+.mainFooter .footerInfo p {
+  font-size: 1.3em;
+  margin: 0 0 40px 0;
+  color: #000; }
+.mainFooter .footerInfo .addressInfo {
+  font-size: 1.5em;
+  font-weight: 400; }
 
 /*# sourceMappingURL=main.css.map */

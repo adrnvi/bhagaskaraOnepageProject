@@ -42,16 +42,16 @@
             </div>
             <div class="col-4">
                 <div class="row clearfix">
-                    <a href="#">
-                    <div class="col-6 services">
+                    <a href="#services">
+                    <div class="col-6 services menuHover">
                         <div class="innerServices">
                         <img src="img/extraImg/smallBubble.png">
                         <p>Services</p>
                         </div>
                     </div>
                     </a>
-                    <a href="#">
-                        <div class="col-6 portfolio">
+                    <a href="#portfolio">
+                        <div class="col-6 portfolio menuHover">
                             <div class="innerPortfolio">
                                 <img src="img/extraImg/portfolio.png">
                                 <p>Portfolio</p>
@@ -70,16 +70,16 @@
 
             <div class="col-4">
                 <div class="row clearfix">
-                    <a href="#">
-                        <div class="col-6 about">
+                    <a href="#about">
+                        <div class="col-6 about menuHover">
                             <div class="innerAbout">
                                 <img src="img/extraImg/settings.png">
                                 <p>About</p>
                             </div>
                         </div>
                     </a>
-                    <a href="#">
-                        <div class="col-6 team">
+                    <a href="#team">
+                        <div class="col-6 team menuHover">
                             <div class="innerTeam">
                                 <img src="img/extraImg/user.png">
                                 <p>Team</p>
@@ -97,15 +97,15 @@
             <div class="col-4">
                 <div class="row clearfix">
                     <a href="#">
-                        <div class="col-6 blog">
+                        <div class="col-6 blog menuHover">
                             <div class="innerBlog">
                                 <img src="img/extraImg/pen.png">
                                 <p>Blog</p>
                             </div>
                         </div>
                     </a>
-                    <a href="#">
-                        <div class="col-6 contact">
+                    <a href="#contact">
+                        <div class="col-6 contact menuHover">
                             <div class="innerContact">
                                 <img src="img/extraImg/paperPlane.png">
                                 <p>Contact</p>
@@ -118,7 +118,7 @@
 
     <div class="row clearfix">
 
-        <div class="col-12 arrowDown"><img src="img/arrowDown.png"></div>
+        <a href="#mainNav"><div class="arrowDown"></div></a>
 
     </div>
 
@@ -126,7 +126,7 @@
 
 </section>
 
-<section class="mainNav">
+<section class="mainNav" id="mainNav">
 
     <div class="container">
         <div class="row clearfix">
@@ -138,13 +138,13 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">team</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">portfolio</a></li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#team">team</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
                         <li><a href="#">blog</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
 
@@ -162,7 +162,7 @@
 
         <div class="row clearfix">
             <div class="col-3">
-                <img src="img/heartImg.png">
+                <div class="featuresImg"></div>
                 <h3>Build with love</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua.</p>
@@ -192,7 +192,7 @@
 
 </section>
 
-<section class="aboutUs">
+<section class="aboutUs" id="about">
 
     <div class="container">
 
@@ -210,13 +210,15 @@
                 <img src="img/devices.png">
             </div>
 
-            <div class="col-6">
+            <div class="col-5 aboutUsDescription">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <a href="#" class="button">Learn more</a>
+            </div>
+
+            <div class="col-1">
+
             </div>
 
         </div>
@@ -243,7 +245,7 @@
 
 </section>
 
-<section class="ourTeam">
+<section class="ourTeam" id="team">
     <div class="container">
         <div class="row clearfix">
             <div class="col-12">
@@ -385,42 +387,59 @@
 
 </section>
 
-<section class="ourServices">
+<section class="ourServices" id="services">
 
     <div class="container">
 
-        <div class="row clearfix">
+        <div class="row clearfix servicesInNumbers">
 
-            <div class="col-3"><p>365</p><footer>Lorem ipsum</footer></div>
+            <div class="col-2"></div>
 
-            <div class="col-3"><p>98%</p><footer>Lorem ipsum</footer></div>
+            <div class="col-2"><p>365</p><footer>Lorem ipsum</footer></div>
 
-            <div class="col-3"><p>69</p><footer>Lorem ipsum</footer></div>
+            <div class="col-2"><p>98%</p><footer>Lorem ipsum</footer></div>
 
-            <div class="col-3"><p>1,642</p><footer>Lorem ipsum</footer></div>
+            <div class="col-2"><p>69</p><footer>Lorem ipsum</footer></div>
+
+            <div class="col-2"><p>1,642</p><footer>Lorem ipsum</footer></div>
+
+            <div class="col-2"></div>
 
         </div>
 
-    </div>
 
-    <div class="row clearfix">
 
-        <div class="col-12">
+    <div class="row clearfix servicesCircle">
+
+        <div class="col-2"></div>
+
+        <div class="col-8">
 
             <div class="greyCircle"></div>
 
-            <h4>"Fusce dapibus, tellus ac cursus commodo, tortos mauris condimentum. Duis mollis,
-            est non commodo luctus, nisi erat"</h4>
+            <p>"Fusce dapibus, tellus ac cursus commodo, tortos mauris condimentum. Duis mollis,
+            est non commodo luctus, nisi erat"</p>
 
             <footer>Lesale Christopher, Pinterest</footer>
 
+            <div class="smallCircle"></div>
+            <div class="smallCircle"></div>
+            <div class="smallGreyCircle"></div>
+            <div class="smallCircle"></div>
+            <div class="smallCircle"></div>
+            <div class="smallCircle"></div>
+
         </div>
+
+        <div class="col-2"></div>
+
+    </div>
 
     </div>
 
 </section>
 
-<section class="ourPortfolio">
+<section class="ourPortfolio" id="portfolio">
 
     <div class="container">
 
@@ -430,60 +449,72 @@
 
         </div>
 
-        <div class="row clearfix">
+        <div class="row clearfix iconsRow">
 
-            <div class="col-4"></div>
+            <div class="col-3"></div>
 
-            <div class="col-4">
+            <div class="col-6 icons">
 
-                <a class="button" href="#">all</a>
+                <a class="buttonActive" href="#">all</a>
                 <a class="button" href="#">web</a>
                 <a class="button" href="#">apps</a>
                 <a class="button" href="#">icon</a>
 
             </div>
 
-            <div class="col-4"></div>
+            <div class="col-3"></div>
 
         </div>
 
-        <div class="row clearfix">
+        <div class="row clearfix portfolioImages">
 
             <div class="col-4">
                 <img src="img/natureImg.jpg">
+                <p>Neque Porro Quisquam</p>
+                <footer>apps, icons, ui</footer>
             </div>
 
             <div class="col-4">
                 <img src="img/tunel.jpg">
+                <p>Neque Porro Quisquam</p>
+                <footer>apps, icons, ui</footer>
             </div>
 
             <div class="col-4">
                 <img src="img/cityLights.jpg">
+                <p>Neque Porro Quisquam</p>
+                <footer>apps, icons, ui</footer>
             </div>
 
         </div>
 
-        <div class="row clearfix">
+        <div class="row clearfix portfolioImages">
 
             <div class="col-4">
                 <img src="img/water.jpg">
+                <p>Neque Porro Quisquam</p>
+                <footer>apps, icons, ui</footer>
             </div>
 
             <div class="col-4">
                 <img src="img/cleanWater.jpg">
+                <p>Neque Porro Quisquam</p>
+                <footer>apps, icons, ui</footer>
             </div>
 
             <div class="col-4">
                 <img class="thumbnail" src="img/bench.jpg">
+                <p>Neque Porro Quisquam</p>
+                <footer>apps, icons, ui</footer>
             </div>
 
         </div>
 
         <div class="row clearfix">
 
-            <div class="col-12">
+            <div class="col-12 align portfolioButton">
 
-                <a class="button">Watch more</a>
+                <a class="buttonActive" href="#">Watch more</a>
 
             </div>
 
@@ -493,25 +524,54 @@
 
 </section>
 
-<section class="mainFooter">
+<section class="mainFooter" id="contact">
 
     <div class="container">
 
-        <div class="row clearfix">
+        <div class="row clearfix align">
 
-            <div class="col-12"><h3>Get in touch</h3></div>
-
-        </div>
-
-        <div class="row clearfix">
-
-            <div class="col-6">sss</div>
-
-            <div class="col-6">fff</div>
+            <div class="col-12"><h3>Get <span class="purple">in touch</span></h3></div>
 
         </div>
 
         <div class="row clearfix">
+
+
+            <div class="col-6">
+
+<form>          <input type="text" class="formBlock" placeholder="Your Name">
+
+    <input type="text" class="formBlock" placeholder="Your Email">
+
+    <textarea class="formBlock">Your Message</textarea>
+                <a class="buttonActive">Send email</a>
+</form>
+            </div>
+
+            <div class="col-6 footerInfo">
+
+                <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.</p></div>
+
+                <div><p class="addressInfo">1600 Pennsylvania Ave NW, Washington,<br>DC 20500, United States of America.</p></div>
+
+                <div><p class="addressInfo">T:(202) 456-1111<br>M:(202) 456-1212</p></div>
+
+
+                <div class="socials">
+                    <div class="socialIcon"><div class="innerIcon">f</div></div>
+
+                    <div class="socialIcon"><div class="innerIcon">t</div></div>
+
+                    <div class="socialIcon"><div class="innerIcon">g</div></div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="row clearfix align">
 
             <div class="col-12"><h3>Bhagas<span class="purple">kara</span>.</h3></div>
 

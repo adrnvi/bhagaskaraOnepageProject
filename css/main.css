@@ -38,6 +38,10 @@ body {
 .align {
   text-align: center; }
 
+.sticky {
+  position: fixed;
+  top: 0; }
+
 /* my 12 column grid */
 .col-1 {
   width: calc(8.33% - 4px);
@@ -120,21 +124,23 @@ body {
 
 /* focus section styling including main baxkground image and navigation*/
 .focus {
-  padding: 50px 0 75px 0;
+  font-family: 'Open Sans', sans-serif;
+  padding: 50px 0 50px 0;
   text-align: center;
   background: url("../img/mainBackgroundPhoto.jpg");
   background-size: cover;
   color: #fff; }
   .focus h2 {
-    font-size: 3.6em;
+    font-size: 5.6em;
     font-weight: 100;
-    padding: 0 0 60px 0; }
+    padding: 0 0 30px 0; }
   .focus h4 {
     font-size: 2.2em;
     font-weight: 100;
     padding: 0 0 20px 0; }
   .focus p {
-    font-size: 1.2em; }
+    font-size: 1.1em;
+    font-weight: 300; }
 
 .pictureNav {
   padding: 70px 0 0 0; }
@@ -150,8 +156,8 @@ body {
     color: #fff; }
   .services .innerServices {
     position: absolute;
-    top: 45px;
-    left: 45px; }
+    top: 50px;
+    left: 50px; }
     .services .innerServices p {
       color: #fff; }
 
@@ -166,8 +172,8 @@ body {
     color: #fff; }
   .portfolio .innerPortfolio {
     position: absolute;
-    top: 45px;
-    left: 45px; }
+    top: 50px;
+    left: 50px; }
     .portfolio .innerPortfolio p {
       color: #fff; }
 
@@ -182,7 +188,7 @@ body {
     color: #fff; }
   .about .innerAbout {
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 55px; }
     .about .innerAbout p {
       color: #fff; }
@@ -198,7 +204,7 @@ body {
     color: #fff; }
   .team .innerTeam {
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 55px; }
     .team .innerTeam p {
       color: #fff; }
@@ -214,7 +220,7 @@ body {
     color: #fff; }
   .blog .innerBlog {
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 55px; }
     .blog .innerBlog p {
       color: #fff; }
@@ -230,8 +236,8 @@ body {
     color: #fff; }
   .contact .innerContact {
     position: absolute;
-    top: 45px;
-    left: 45px; }
+    top: 50px;
+    left: 55px; }
     .contact .innerContact p {
       color: #fff; }
 
@@ -241,37 +247,61 @@ body {
   margin: 0 auto;
   background: url("../img/arrowDown.png"); }
 
-.mainNav h2 {
-  position: relative;
-  bottom: 7px;
-  font-weight: 100;
-  font-size: 1.9em; }
-.mainNav ul {
-  list-style-type: none;
-  text-transform: uppercase; }
-  .mainNav ul li {
-    float: left;
-    padding: 0 15px 0 15px; }
-  .mainNav ul a {
-    display: block;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.05em;
-    color: #676767; }
-    .mainNav ul a:hover {
-      color: #9f449b; }
-    .mainNav ul a:active {
-      color: #9f449b; }
-    .mainNav ul a:focus {
-      color: #9f449b; }
-.mainNav .row {
-  padding: 5% 0 4% 0; }
+.mainNav {
+  background-color: #fff;
+  z-index: 5;
+  width: 100%; }
+  .mainNav h2 {
+    position: relative;
+    bottom: 7px;
+    font-weight: 100;
+    font-size: 1.9em; }
+  .mainNav ul {
+    list-style-type: none;
+    text-transform: uppercase; }
+    .mainNav ul li {
+      float: left;
+      padding: 0 15px 0 15px; }
+    .mainNav ul a {
+      display: block;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 1.05em;
+      color: #676767; }
+      .mainNav ul a:hover {
+        color: #9f449b; }
+      .mainNav ul a:active {
+        color: #9f449b; }
+      .mainNav ul a:focus {
+        color: #9f449b; }
+  .mainNav .row {
+    padding: 5% 0 4% 0; }
 
 /* styles for section features */
 .features {
   padding: 8% 0 8% 0;
   text-align: center;
   background-color: #eee; }
+  .features .heartImg {
+    background-image: url("../img/heartImgHover.png");
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; }
+  .features .diamondImg {
+    background-image: url("../img/diamondImg.png");
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; }
+  .features .binImg {
+    background-image: url("../img/binImg.png");
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; }
+  .features .phoneImg {
+    background-image: url("../img/phoneImg.png");
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; }
   .features div {
     padding: 0 5px 0 5px; }
   .features h3 {
@@ -283,10 +313,11 @@ body {
 
 /* styles for section aboutUs */
 .aboutUs {
-  padding: 8% 0 8% 0; }
+  padding: 0 0 100px 0; }
   .aboutUs .title {
     text-align: center; }
     .aboutUs .title h3 {
+      margin: 100px 0 100px 0;
       font-size: 3em;
       display: inline-block;
       font-weight: 100; }
@@ -307,7 +338,6 @@ body {
     bottom: 15px; }
   .aboutUs .aboutUsText {
     position: relative;
-    padding: 10% 0 0 0;
     line-height: 2; }
     .aboutUs .aboutUsText .aboutUsDescription {
       padding: 0 0 0 10px; }
@@ -435,45 +465,43 @@ body {
     border-radius: 50%; }
 
 /* styles for portfolio */
-.ourPortfolio {
-  margin: 100px 0 0 0; }
-  .ourPortfolio h3 {
-    margin: 0 0 100px 0;
-    font-size: 3em;
-    font-weight: 100; }
-  .ourPortfolio .thumbnail {
-    height: 345px; }
-  .ourPortfolio img {
-    width: 100%;
-    height: auto; }
-  .ourPortfolio h3 {
-    text-align: center;
-    font-weight: 100; }
-  .ourPortfolio .iconsRow {
-    padding: 0 0 50px 0; }
-    .ourPortfolio .iconsRow .icons {
-      text-align: center; }
-      .ourPortfolio .iconsRow .icons a {
-        margin: 0 10px 0 10px;
-        text-transform: uppercase; }
-  .ourPortfolio .portfolioImages {
+.ourPortfolio h3 {
+  margin: 100px 0 100px 0;
+  font-size: 3em;
+  font-weight: 100; }
+.ourPortfolio .thumbnail {
+  height: 345px; }
+.ourPortfolio img {
+  width: 100%;
+  height: auto; }
+.ourPortfolio h3 {
+  text-align: center;
+  font-weight: 100; }
+.ourPortfolio .iconsRow {
+  padding: 0 0 50px 0; }
+  .ourPortfolio .iconsRow .icons {
     text-align: center; }
-    .ourPortfolio .portfolioImages img {
-      padding: 0 0 10px 0; }
-    .ourPortfolio .portfolioImages p {
-      font-size: 1.3em;
-      color: #000;
-      letter-spacing: -1px;
-      padding: 0 0 3px 0; }
-    .ourPortfolio .portfolioImages footer {
-      color: #222;
-      font-size: 0.9em;
-      padding: 0 0 28px 0; }
-  .ourPortfolio .portfolioButton {
-    padding: 30px 0 0 0; }
-    .ourPortfolio .portfolioButton a {
-      width: 175px;
-      padding: 22px 0 22px 0; }
+    .ourPortfolio .iconsRow .icons a {
+      margin: 0 10px 0 10px;
+      text-transform: uppercase; }
+.ourPortfolio .portfolioImages {
+  text-align: center; }
+  .ourPortfolio .portfolioImages img {
+    padding: 0 0 10px 0; }
+  .ourPortfolio .portfolioImages p {
+    font-size: 1.3em;
+    color: #000;
+    letter-spacing: -1px;
+    padding: 0 0 3px 0; }
+  .ourPortfolio .portfolioImages footer {
+    color: #222;
+    font-size: 0.9em;
+    padding: 0 0 28px 0; }
+.ourPortfolio .portfolioButton {
+  padding: 30px 0 0 0; }
+  .ourPortfolio .portfolioButton a {
+    width: 175px;
+    padding: 22px 0 22px 0; }
 
 .mainFooter .socialIcon {
   height: 70px;
@@ -511,5 +539,115 @@ body {
 .mainFooter .footerInfo .addressInfo {
   font-size: 1.5em;
   font-weight: 400; }
+
+/* responsive styles */
+@media (max-width: 1020px) {
+  h3 {
+    margin: 50px 0 50px 0 !important; }
+
+  body {
+    font-size: 0.8em; }
+
+  .container {
+    width: 900px; }
+
+  .picNav {
+    display: none; }
+
+  .innerIcon {
+    left: 14px !important;
+    top: 8px !important; } }
+@media (max-width: 900px) {
+  h3 {
+    margin: 30px 0 30px 0 !important; }
+
+  body {
+    font-size: 0.8em; }
+
+  .container {
+    width: 600px; }
+
+  .picNav {
+    display: none; }
+
+  .mainNav li {
+    font-size: 0.9em; }
+
+  .aboutUs {
+    text-align: center; }
+    .aboutUs .col-6 {
+      margin: 0 auto;
+      width: 100%; }
+    .aboutUs .col-5 {
+      width: 100%; }
+      .aboutUs .col-5 .button {
+        position: static;
+        margin: 0 auto; }
+
+  .features div.col-3 {
+    width: 100%; }
+    .features div.col-3 h3 {
+      padding: 0;
+      margin: 0; }
+    .features div.col-3 p {
+      padding: 0;
+      margin: 0; }
+
+  .innerIcon {
+    left: 14px !important;
+    top: 9px !important; } }
+@media (max-width: 630px) {
+  h3 {
+    margin: 10px 0 10px 0 !important; }
+
+  body {
+    font-size: 0.6em; }
+
+  .greyCircle {
+    width: 90px;
+    height: 90px; }
+
+  .portfolioImages .col-4 {
+    width: 100%; }
+
+  .heartImg, .diamondImg, .binImg, .phoneImg {
+    display: none; }
+
+  .container {
+    width: 350px; }
+
+  section.focus {
+    display: none; }
+
+  .mainNav div.col-4, .mainNav div.col-8 {
+    width: 100%; }
+  .mainNav .col-4 h2 {
+    text-align: center;
+    font-size: 3.5em; }
+  .mainNav .col-8 li {
+    float: none;
+    text-align: center;
+    font-size: 1.9em;
+    padding: 5px; }
+  .mainNav .col-8 a:hover {
+    background-color: #9f449b;
+    color: #fff; }
+
+  .innerIcon {
+    left: 14px !important;
+    top: 10px !important; }
+
+  .col-6 {
+    text-align: center;
+    width: 100%; }
+
+  .formBlock {
+    width: 100% !important; }
+
+  .aboutUs .col-6 {
+    display: none; }
+
+  .servicesInNumbers footer {
+    font-size: 1.2em !important; } }
 
 /*# sourceMappingURL=main.css.map */

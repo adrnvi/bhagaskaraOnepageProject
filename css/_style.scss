@@ -48,6 +48,11 @@ body {
   text-align: center;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
 /* my 12 column grid */
 
 .col-1 {
@@ -149,15 +154,16 @@ body {
 /* focus section styling including main baxkground image and navigation*/
 
 .focus {
-  padding: 50px 0 75px 0;
+  font-family: 'Open Sans', sans-serif;
+  padding: 50px 0 50px 0;
   text-align: center;
   background: url("../img/mainBackgroundPhoto.jpg");
   background-size: cover;
   color: map_get($myColors, white);
   h2 {
-    font-size: 3.6em;
+    font-size: 5.6em;
     font-weight: 100;
-    padding: 0 0 60px 0;
+    padding: 0 0 30px 0;
   }
   h4 {
     font-size: 2.2em;
@@ -165,7 +171,8 @@ body {
     padding: 0 0 20px 0;
   }
   p {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-weight: 300;
   }
 }
 
@@ -185,8 +192,8 @@ body {
   position: relative;
   .innerServices {
     position: absolute;
-    top: 45px;
-    left: 45px;
+    top: 50px;
+    left: 50px;
     p {
       color: map_get($myColors, white);
     }
@@ -206,8 +213,8 @@ body {
   position: relative;
   .innerPortfolio {
     position: absolute;
-    top: 45px;
-    left: 45px;
+    top: 50px;
+    left: 50px;
     p {
       color: map_get($myColors, white);
     }
@@ -226,7 +233,7 @@ body {
   position: relative;
   .innerAbout {
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 55px;
     p {
       color: map_get($myColors, white);
@@ -246,7 +253,7 @@ body {
   position: relative;
   .innerTeam {
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 55px;
     p {
       color: map_get($myColors, white);
@@ -266,7 +273,7 @@ body {
   position: relative;
   .innerBlog {
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 55px;
     p {
       color: map_get($myColors, white);
@@ -286,8 +293,8 @@ body {
   position: relative;
   .innerContact {
     position: absolute;
-    top: 45px;
-    left: 45px;
+    top: 50px;
+    left: 55px;
     p {
       color: map_get($myColors, white);
     }
@@ -302,6 +309,9 @@ body {
 }
 
 .mainNav {
+  background-color: map_get($myColors, white);
+  z-index: 5;
+  width: 100%;
   h2 {
     position: relative;
     bottom: 7px;
@@ -340,6 +350,30 @@ body {
 /* styles for section features */
 
 .features {
+  .heartImg {
+    background-image: url("../img/heartImgHover.png");
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .diamondImg {
+    background-image: url("../img/diamondImg.png");
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .binImg {
+    background-image: url("../img/binImg.png");
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .phoneImg {
+    background-image: url("../img/phoneImg.png");
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
   div {
     padding: 0 5px 0 5px;
   }
@@ -360,10 +394,11 @@ body {
 /* styles for section aboutUs */
 
 .aboutUs {
-  padding: 8% 0 8% 0;
+  padding: 0 0 100px 0;
   .title {
     text-align: center;
     h3 {
+      margin: 100px 0 100px 0;
       font-size: 3em;
       display: inline-block;
       font-weight: 100;
@@ -389,7 +424,6 @@ body {
   }
   .aboutUsText {
     position: relative;
-    padding: 10% 0 0 0;
     line-height: 2;
     .aboutUsDescription {
       padding: 0 0 0 10px;
@@ -563,7 +597,7 @@ body {
 
 .ourPortfolio {
   h3 {
-    margin: 0 0 100px 0;
+    margin: 100px 0 100px 0;
     font-size: 3em;
     font-weight: 100;
   }
@@ -574,7 +608,6 @@ body {
     width: 100%;
     height: auto;
   }
-  margin: 100px 0 0 0;
   h3 {
     text-align: center;
     font-weight: 100;
@@ -668,3 +701,157 @@ body {
 
   }
 }
+
+
+/* responsive styles */
+
+
+@media (max-width: 1020px) {
+  h3 {
+    margin: 50px 0 50px 0 !important;
+  }
+  body {
+    font-size: 0.8em;
+  }
+  .container {
+    width: 900px;
+  }
+  .picNav {
+    display: none;
+  }
+  .innerIcon {
+    left: 14px !important;
+    top: 8px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  h3 {
+    margin: 30px 0 30px 0 !important;
+  }
+  body {
+    font-size: 0.8em;
+  }
+  .container {
+    width: 600px;
+  }
+  .picNav {
+    display: none;
+  }
+  .mainNav li {
+    font-size: 0.9em;
+  }
+  .aboutUs {
+    text-align: center;
+    .col-6 {
+      margin: 0 auto;
+      width: 100%;
+    }
+    .col-5 {
+      width: 100%;
+      .button {
+        position: static;
+        margin: 0 auto;
+      }
+    }
+  }
+  .features {
+    div.col-3 {
+      width: 100%;
+      h3 {
+        padding: 0;
+        margin: 0;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+  .innerIcon {
+    left: 14px !important;
+    top: 9px !important;
+  }
+}
+
+
+@media (max-width: 630px) {
+  h3 {
+    margin: 10px 0 10px 0 !important;
+  }
+  body {
+    font-size: 0.6em;
+  }
+  .greyCircle {
+    width: 90px;
+    height: 90px;
+  }
+  .portfolioImages {
+    .col-4 {
+      width: 100%;
+    }
+  }
+  .heartImg, .diamondImg, .binImg, .phoneImg {
+    display: none;
+  }
+  .container {
+    width: 350px;
+  }
+  section.focus {
+    display: none;
+  }
+  .mainNav {
+    div.col-4, div.col-8 {
+      width: 100%;
+
+    }
+    .col-4 {
+      h2 {
+        text-align: center;
+        font-size: 3.5em;
+      }
+    }
+    .col-8 {
+      li {
+        float: none;
+        text-align: center;
+        font-size: 1.9em;
+        padding: 5px;
+      }
+      a {
+        &:hover {
+          background-color: map_get($myColors, mainPurple);
+          color: map_get($myColors, white);
+        }
+      }
+    }
+  }
+  .innerIcon {
+    left: 14px !important;
+    top: 10px !important;
+  }
+  .col-6 {
+    text-align: center;
+    width: 100%;
+  }
+  .formBlock {
+    width: 100% !important;
+  }
+  .aboutUs {
+    .col-6 {
+      display: none;
+    }
+    }
+  .servicesInNumbers {
+    footer {
+      font-size: 1.2em !important;
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -57,41 +57,40 @@ $('a[href*=#mainNav]').on('click', function(event){
 
 $('a[href*=#services]').on('click', function(event){
     event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 2000);
 });
 
 $('a[href*=#portfolio]').on('click', function(event){
     event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 2000);
 })
 
 $('a[href*=#about]').on('click', function(event){
     event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 2000);
 })
 
 $('a[href*=#team]').on('click', function(event){
     event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 2000);
 })
 
 $('a[href*=#contact]').on('click', function(event){
     event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 2000);
 })
 
 // sticky menu
 
     var menu = $(".mainNav");
     var menuBar = $(".mainNav .row");
-    //var paragraphs = $("p");
-    var links = $(".mainNav .nav a");
+    var sections = $("section[id]");
+    var links = $(".mainNav a[href]").not(document.getElementById("notblog"));
     var lastMenuPositionFromTop = 0;
-    var menuHeight = menu.height();
 
     $(window).scroll(function(event){
         if( menu.hasClass("sticky") === false &&
-            $(this).scrollTop() > menu.offset().top && $(window).width() > 1020) {
+            $(this).scrollTop() > menu.offset().top && $(window).width() > 900) {
 
             lastMenuPositionFromTop = menu.offset().top;
             menu.addClass("sticky");
@@ -104,28 +103,69 @@ $('a[href*=#contact]').on('click', function(event){
             menu.removeClass("sticky");
             menuBar.css("padding", "5% 0 4% 0");
         }
-        /*paragraphs.each(function(index){
-            if(index + 1 >= paragraphs.length){
-                if( paragraphs.eq(index).offset().top < $(window).scrollTop()){
-                    links.eq(index).addClass("active");
+
+        sections.each(function(index){
+            if(index + 1 >= sections.length){
+                if( sections.eq(index).offset().top < $(window).scrollTop()){
+                    links.eq(index).addClass("purple");
                 }
-                else{
-                    links.eq(index).removeClass("active");
+                else {
+                    links.eq(index).removeClass("purple");
                 }
             }
-            else{
+            else {
+                if( sections.eq(index).offset().top < $(window).scrollTop() &&
+                    sections.eq(index + 1).offset().top > $(window).scrollTop()){
 
-                if( paragraphs.eq(index).offset().top < $(window).scrollTop() &&
-                    paragraphs.eq(index + 1).offset().top > $(window).scrollTop()){
-
-                    links.eq(index).addClass("active");
+                    links.eq(index).addClass("purple");
                 }
                 else{
-                    links.eq(index).removeClass("active");
+                    links.eq(index).removeClass("purple");
                 }
             }
-        });*/
+        });
     });
+
+
+// simple slider
+
+
+$('.mySlider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+});
+
+
+/*
+    var images = $(".ourTeam li");
+    var visibleImage = 0;
+    images.eq(visibleImage).show();
+
+    $(".rightArrow").click(function(){
+        images.eq(visibleImage).hide(0);
+        visibleImage++;
+        if(visibleImage >= images.length){
+            visibleImage = 0;
+        }
+        images.eq(visibleImage).show(0);
+    });
+
+    $(".leftArrow").click(function(){
+        images.eq(visibleImage).hide(0);
+        visibleImage--;
+        if(visibleImage < 0){
+            visibleImage = images.length-1;
+        }
+        images.eq(visibleImage).show(0);
+    });
+*/
+
+// carrousel slider
+
 
 
 });

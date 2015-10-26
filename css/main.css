@@ -9,7 +9,7 @@ body {
   color: #676767; }
 
 .purple {
-  color: #9f449b; }
+  color: #9f449b !important; }
 
 .active {
   background-color: #9f449b; }
@@ -237,7 +237,7 @@ body {
   .contact .innerContact {
     position: absolute;
     top: 50px;
-    left: 55px; }
+    left: 52px; }
     .contact .innerContact p {
       color: #fff; }
 
@@ -367,6 +367,8 @@ body {
   .ourTeam h4 {
     font-size: 1.4em;
     display: inline-block; }
+  .ourTeam ul {
+    list-style-type: none; }
 
 .greyCircle {
   width: 180px;
@@ -470,7 +472,7 @@ body {
   font-size: 3em;
   font-weight: 100; }
 .ourPortfolio .thumbnail {
-  height: 345px; }
+  height: 346px; }
 .ourPortfolio img {
   width: 100%;
   height: auto; }
@@ -545,6 +547,9 @@ body {
   h3 {
     margin: 50px 0 50px 0 !important; }
 
+  .ourTeam {
+    margin: 0 0 50px 0; }
+
   body {
     font-size: 0.8em; }
 
@@ -556,10 +561,17 @@ body {
 
   .innerIcon {
     left: 14px !important;
-    top: 8px !important; } }
+    top: 8px !important; }
+
+  .mainFooter .innerIcon {
+    left: 27px !important;
+    top: 17px !important; } }
 @media (max-width: 900px) {
   h3 {
     margin: 30px 0 30px 0 !important; }
+
+  .ourTeam {
+    margin: 0 0 30px 0; }
 
   body {
     font-size: 0.8em; }
@@ -595,10 +607,23 @@ body {
 
   .innerIcon {
     left: 14px !important;
-    top: 9px !important; } }
+    top: 9px !important; }
+
+  .mainFooter .socialIcon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em; }
+    .mainFooter .socialIcon .innerIcon {
+      height: 40px;
+      width: 40px;
+      left: 24px !important;
+      top: 17px !important; } }
 @media (max-width: 630px) {
   h3 {
     margin: 10px 0 10px 0 !important; }
+
+  .ourTeam {
+    margin: 0 0 10px 0; }
 
   body {
     font-size: 0.6em; }
@@ -646,8 +671,22 @@ body {
 
   .aboutUs .col-6 {
     display: none; }
+  .aboutUs .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(20%); }
 
   .servicesInNumbers footer {
-    font-size: 1.2em !important; } }
+    font-size: 1.2em !important; }
+
+  .mainFooter .socialIcon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em; }
+    .mainFooter .socialIcon .innerIcon {
+      height: 40px;
+      width: 40px;
+      left: 10px !important;
+      top: 18px !important; } }
 
 /*# sourceMappingURL=main.css.map */

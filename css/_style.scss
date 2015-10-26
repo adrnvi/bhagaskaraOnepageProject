@@ -53,6 +53,17 @@ body {
   top: 0;
 }
 
+.personOneSkills {
+  display: none;
+}
+
+.personTwoSkills {
+}
+
+.personThreeSkills {
+  display: none;
+}
+
 /* my 12 column grid */
 
 .col-1 {
@@ -158,6 +169,7 @@ body {
   padding: 50px 0 50px 0;
   text-align: center;
   background: url("../img/mainBackgroundPhoto.jpg");
+  background-attachment: fixed;
   background-size: cover;
   color: map_get($myColors, white);
   h2 {
@@ -451,6 +463,10 @@ body {
 /* styles for ourTeam section */
 
 .ourTeam {
+  .person:nth-child(2) {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
   margin: 0 0 100px 0;
   text-align: center;
   h3 {
@@ -537,12 +553,61 @@ body {
       width: 85%;
     }
   }
+  .skillBar2 {
+    height:20px;
+    background-color: map_get($myColors, greyCircle);
+    p.skillBar21 {
+      height: 20px;
+      background-color: map_get($myColors, mainPurple);
+      width: 74%;
+    }
+    p.skillBar22 {
+      height: 20px;
+      background-color: map_get($myColors, mainPurple);
+      width: 54%;
+    }
+    p.skillBar23 {
+      height: 20px;
+      background-color: map_get($myColors, mainPurple);
+      width: 55%;
+    }
+    p.skillBar24 {
+      height: 20px;
+      background-color: map_get($myColors, mainPurple);
+      width: 95%;
+    }
+  }
+  .skillBar3 {
+    height:20px;
+    background-color: map_get($myColors, greyCircle);
+    p.skillBar31 {
+      height: 20px;
+      background-color: map_get($myColors, mainPurple);
+      width: 65%;
+    }
+    p.skillBar32 {
+      height: 20px;
+      background-color: map_get($myColors, mainPurple);
+      width: 95%;
+    }
+    p.skillBar33 {
+      height: 20px;
+      background-color: map_get($myColors, mainPurple);
+      width: 75%;
+    }
+    p.skillBar34 {
+      height: 20px;
+      background-color: map_get($myColors, mainPurple);
+      width: 55%;
+    }
+  }
 }
 
 
 /* styles for services */
 
 .ourServices {
+
   background-color: map_get($myColors, lightGreyBackground);
   text-align: center;
   padding: 0 0 100px 0;

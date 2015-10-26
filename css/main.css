@@ -42,6 +42,12 @@ body {
   position: fixed;
   top: 0; }
 
+.personOneSkills {
+  display: none; }
+
+.personThreeSkills {
+  display: none; }
+
 /* my 12 column grid */
 .col-1 {
   width: calc(8.33% - 4px);
@@ -128,6 +134,7 @@ body {
   padding: 50px 0 50px 0;
   text-align: center;
   background: url("../img/mainBackgroundPhoto.jpg");
+  background-attachment: fixed;
   background-size: cover;
   color: #fff; }
   .focus h2 {
@@ -360,6 +367,9 @@ body {
 .ourTeam {
   margin: 0 0 100px 0;
   text-align: center; }
+  .ourTeam .person:nth-child(2) {
+    font-size: 1.2em;
+    font-weight: 700; }
   .ourTeam h3 {
     margin: 100px 0 100px 0;
     font-size: 3em;
@@ -422,6 +432,44 @@ body {
       height: 20px;
       background-color: #9f449b;
       width: 85%; }
+  .skills .skillBar2 {
+    height: 20px;
+    background-color: #cdcdcd; }
+    .skills .skillBar2 p.skillBar21 {
+      height: 20px;
+      background-color: #9f449b;
+      width: 74%; }
+    .skills .skillBar2 p.skillBar22 {
+      height: 20px;
+      background-color: #9f449b;
+      width: 54%; }
+    .skills .skillBar2 p.skillBar23 {
+      height: 20px;
+      background-color: #9f449b;
+      width: 55%; }
+    .skills .skillBar2 p.skillBar24 {
+      height: 20px;
+      background-color: #9f449b;
+      width: 95%; }
+  .skills .skillBar3 {
+    height: 20px;
+    background-color: #cdcdcd; }
+    .skills .skillBar3 p.skillBar31 {
+      height: 20px;
+      background-color: #9f449b;
+      width: 65%; }
+    .skills .skillBar3 p.skillBar32 {
+      height: 20px;
+      background-color: #9f449b;
+      width: 95%; }
+    .skills .skillBar3 p.skillBar33 {
+      height: 20px;
+      background-color: #9f449b;
+      width: 75%; }
+    .skills .skillBar3 p.skillBar34 {
+      height: 20px;
+      background-color: #9f449b;
+      width: 55%; }
 
 /* styles for services */
 .ourServices {

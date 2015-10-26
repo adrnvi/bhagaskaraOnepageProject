@@ -490,6 +490,10 @@ body {
       font-size: 0.8em; }
   .ourServices .servicesCircle {
     padding: 50px 0 0 0; }
+    .ourServices .servicesCircle .slider {
+      overflow: hidden; }
+    .ourServices .servicesCircle .sliderItem {
+      display: none; }
     .ourServices .servicesCircle .greyCircle {
       height: 150px;
       width: 150px;
@@ -739,5 +743,12 @@ body {
       width: 40px;
       left: 10px !important;
       top: 18px !important; } }
+.toTop {
+  position: fixed;
+  bottom: 6px;
+  right: 36px; }
+  .toTop img {
+    height: 34px;
+    width: 34px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -616,6 +616,7 @@ body {
   text-align: center;
   padding: 0 0 100px 0;
   .servicesInNumbers {
+
     padding: 100px 0 0 0;
     p {
       font-size: 3em;
@@ -628,7 +629,12 @@ body {
     }
   }
   .servicesCircle {
-
+    .slider {
+      overflow: hidden;
+    }
+    .sliderItem {
+      display: none;
+    }
     padding: 50px 0 0 0;
     .greyCircle {
       height: 150px;
@@ -976,6 +982,16 @@ body {
   }
 }
 
+
+.toTop {
+  position: fixed;
+  bottom: 6px;
+  right: 36px;
+  img {
+    height: 34px;
+    width: 34px;
+  }
+}
 
 
 

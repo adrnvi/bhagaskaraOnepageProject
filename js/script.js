@@ -52,6 +52,11 @@ var Application = function() {
             $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
         });
 
+        $('a[href*=#topOfPage]').on('click', function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+        });
+
         $('a[href*=#services]').on('click', function(event){
             event.preventDefault();
 
@@ -210,26 +215,59 @@ app.makeSticky();
 app.makeCarousel();
 
 
+// auto slider
 
 
 
-    var sliderItem1 = $(".sliderItem1");
-    var sliderItem2 = $(".sliderItem2");
-    var sliderItem3 = $(".sliderItem3");
-    var sliderItem4 = $(".sliderItem4");
-    var sliderItem5 = $(".sliderItem5");
-    var sliderItem6 = $(".sliderItem6");
-
-    var switch1 = $(".circle1");
-    var switch2 = $(".circle2");
-    var switch3 = $(".circle3");
-    var switch4 = $(".circle4");
-    var switch5 = $(".circle5");
-    var switch6 = $(".circle6");
+    var switchIcon = $(".smallCircle");
 
 
-    console.log(sliderItem1);
-    console.log(switch3);
+    function slideShow(){
+
+        var slideCount = 0;
+        var totalSlides = 6;
+
+        var sliderItems = $(".sliderItem");
+
+        sliderItems.eq(slideCount).show();
+
+        sliderItems.eq(slideCount).fadeIn(1000).fadeOut(1000, function(){
+            if(slideCount < totalSlides - 1) {
+                slideCount++;
+                slideCount = 0;
+                slideShow();
+            }
+        });
+    }
+
+$("")
+
+
+
+
+    /*$.each(sliderItems, function(index, value){
+        sliderItems[index].fadeOut().next().fadeIn();
+     });*/
+
+    /*setInterval(function() {
+        sliderItem.fadeOut().next().fadeIn();
+    }, 2000)*/
+
+    /*$(".slider > div:gt(0)").hide();
+
+    setInterval(function() {
+
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('.slider');
+    },  3000);*/
+
+
+
+
+
 
 
 

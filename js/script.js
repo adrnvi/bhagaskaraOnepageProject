@@ -130,14 +130,49 @@ $('a[href*=#contact]').on('click', function(event){
 // simple slider
 
 
-$('.mySlider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: true,
-    centerMode: true,
-    focusOnSelect: true
-});
+    var leftArrow = $(".leftArrow");
+    var rightArrow = $(".rightArrow");
+
+    var people = $(".person");
+
+    var allPersons = $(".allItems");
+
+
+    rightArrow.on("click", function(event){
+
+        event.preventDefault();
+
+
+        people.eq(2).clone(true).prependTo(allPersons);
+        console.log(people.eq(2))
+        people.eq(2).remove();
+
+        /*$.each(people, function(index){
+
+        })*/
+
+
+    });
+
+    leftArrow.on("click", function(event){
+
+        event.preventDefault();
+
+        people.eq(0).clone(true).appendTo(allPersons);
+        people.eq(0).remove();
+
+    });
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*

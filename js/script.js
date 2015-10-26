@@ -208,4 +208,42 @@ app.replaceArrow();
 app.animateAnchors();
 app.makeSticky();
 app.makeCarousel();
+
+
+
+
+
+    var sliderItem1 = $(".sliderItem1");
+    var sliderItem2 = $(".sliderItem2");
+    var sliderItem3 = $(".sliderItem3");
+    var sliderItem4 = $(".sliderItem4");
+    var sliderItem5 = $(".sliderItem5");
+    var sliderItem6 = $(".sliderItem6");
+
+    var switch1 = $(".circle1");
+    var switch2 = $(".circle2");
+    var switch3 = $(".circle3");
+    var switch4 = $(".circle4");
+    var switch5 = $(".circle5");
+    var switch6 = $(".circle6");
+
+
+    console.log(sliderItem1);
+    console.log(switch3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

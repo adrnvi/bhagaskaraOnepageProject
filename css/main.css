@@ -48,6 +48,9 @@ body {
 .personThreeSkills {
   display: none; }
 
+.sliderItem2, .sliderItem3, .sliderItem4, .sliderItem5, .sliderItem6 {
+  display: none; }
+
 /* my 12 column grid */
 .col-1 {
   width: calc(8.33% - 4px);

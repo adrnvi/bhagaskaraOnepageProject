@@ -611,6 +611,10 @@ body {
 /* styles for services */
 
 .ourServices {
+  .container {
+    overflow: hidden;
+
+  }
 
   background-color: map_get($myColors, lightGreyBackground);
   text-align: center;
@@ -630,10 +634,13 @@ body {
   }
   .servicesCircle {
     .slider {
-      overflow: hidden;
+      width: 6120px;
+      margin: 0 auto;
     }
     .sliderItem {
-      display: none;
+      text-align: center;
+      width: 1020px;
+      float: left;
     }
     padding: 50px 0 0 0;
     .greyCircle {

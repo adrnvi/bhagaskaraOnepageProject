@@ -217,30 +217,48 @@ app.makeCarousel();
 
 // auto slider
 
+    /*function slideShow() {
+
+        var sliderItems = $(".sliderItem");
+        var slider = $(".slider");
+
+        var totalSlides = 6;
 
 
-    var switchIcon = $(".smallCircle");
+        for (var slideCount = 0; slideCount < totalSlides - 1; slideCount++) {
+            sliderItems.last().clone(true).prependTo(slider);
+            sliderItems.last().remove();
+        }
+        slideShow()
+    }
+
+    slideShow()*/
+
+
 
 
     function slideShow(){
 
-        var slideCount = 0;
-        var totalSlides = 6;
-
         var sliderItems = $(".sliderItem");
 
-        sliderItems.eq(slideCount).show();
+        $(sliderItems[0]).show();
+        var pp = 0;
+        for(var slideCount = 0; slideCount < 6; slideCount++) {
+            pp = slideCount+1;
+            sliderItems.eq(slideCount).delay(3000).hide(3000);
+            sliderItems.eq(pp).show(3000);
+        }
+        //slideShow();
 
-        sliderItems.eq(slideCount).fadeIn(1000).fadeOut(1000, function(){
-            if(slideCount < totalSlides - 1) {
-                slideCount++;
-                slideCount = 0;
-                slideShow();
-            }
-        });
     }
 
-$("")
+    slideShow();
+
+
+
+
+
+
 
 
 
@@ -263,25 +281,5 @@ $("")
             .end()
             .appendTo('.slider');
     },  3000);*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });

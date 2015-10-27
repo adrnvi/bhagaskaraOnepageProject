@@ -479,6 +479,8 @@ body {
   background-color: #eee;
   text-align: center;
   padding: 0 0 100px 0; }
+  .ourServices .container {
+    overflow: hidden; }
   .ourServices .servicesInNumbers {
     padding: 100px 0 0 0; }
     .ourServices .servicesInNumbers p {
@@ -491,9 +493,12 @@ body {
   .ourServices .servicesCircle {
     padding: 50px 0 0 0; }
     .ourServices .servicesCircle .slider {
-      overflow: hidden; }
+      width: 6120px;
+      margin: 0 auto; }
     .ourServices .servicesCircle .sliderItem {
-      display: none; }
+      text-align: center;
+      width: 1020px;
+      float: left; }
     .ourServices .servicesCircle .greyCircle {
       height: 150px;
       width: 150px;

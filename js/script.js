@@ -217,6 +217,19 @@ app.makeCarousel();
 
 // auto slider
 
+
+    function slideShow(){
+        var slider = $('.slider');
+        var leftOffset  = parseInt(slider.css('left'),10) - 1020;
+
+//tu blokada jak leftOffset przekorczy granice
+        slider.animate({
+            'left': leftOffset+'px'
+        });
+    }
+
+    setInterval(slideShow, 4000);
+
     /*function slideShow() {
 
         var sliderItems = $(".sliderItem");
@@ -237,7 +250,7 @@ app.makeCarousel();
 
 
 
-    function slideShow(){
+    /*function slideShow(){
 
         var sliderItems = $(".sliderItem");
 
@@ -252,7 +265,7 @@ app.makeCarousel();
 
     }
 
-    slideShow();
+    slideShow();*/
 
 
 

@@ -24,6 +24,8 @@ body {
   padding: 6px 0 6px 0;
   border-radius: 5px;
   background-color: #9f449b; }
+  .buttonActive:hover, .ourPortfolio .portfolioButton a:hover {
+    opacity: 0.9; }
 
 .button {
   text-align: center;
@@ -477,8 +479,7 @@ body {
 /* styles for services */
 .ourServices {
   background-color: #eee;
-  text-align: center;
-  padding: 0 0 100px 0; }
+  text-align: center; }
   .ourServices .container {
     overflow: hidden; }
   .ourServices .servicesInNumbers {
@@ -494,7 +495,10 @@ body {
     padding: 50px 0 0 0; }
     .ourServices .servicesCircle .slider {
       width: 6120px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      position: relative;
+      left: 0;
+      height: 500px; }
     .ourServices .servicesCircle .sliderItem {
       text-align: center;
       width: 1020px;
@@ -549,7 +553,28 @@ body {
 .ourPortfolio .portfolioImages {
   text-align: center; }
   .ourPortfolio .portfolioImages img {
-    padding: 0 0 10px 0; }
+    height: 360px; }
+  .ourPortfolio .portfolioImages .img1, .ourPortfolio .portfolioImages .img2, .ourPortfolio .portfolioImages .img3, .ourPortfolio .portfolioImages .img4, .ourPortfolio .portfolioImages .img5, .ourPortfolio .portfolioImages .img6 {
+    position: relative; }
+    .ourPortfolio .portfolioImages .img1:hover .divCaption, .ourPortfolio .portfolioImages .img2:hover .divCaption, .ourPortfolio .portfolioImages .img3:hover .divCaption, .ourPortfolio .portfolioImages .img4:hover .divCaption, .ourPortfolio .portfolioImages .img5:hover .divCaption, .ourPortfolio .portfolioImages .img6:hover .divCaption {
+      display: block; }
+  .ourPortfolio .portfolioImages .divCaption {
+    display: none;
+    top: 0px;
+    width: 100%;
+    position: absolute;
+    background: rgba(86, 93, 103, 0.48) none repeat scroll 0% 0%;
+    text-align: center;
+    height: 360px; }
+    .ourPortfolio .portfolioImages .divCaption span {
+      background: transparent url("../img/plus.png") no-repeat scroll 0% 0%/100% auto;
+      width: 100px;
+      height: 100px;
+      display: block;
+      text-align: center;
+      position: absolute;
+      top: 34%;
+      right: 36%; }
   .ourPortfolio .portfolioImages p {
     font-size: 1.3em;
     color: #000;

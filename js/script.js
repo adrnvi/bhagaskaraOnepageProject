@@ -203,12 +203,138 @@ var Application = function() {
         slider.animate({
             'left': leftOffset+'px'
         });
+    }
 
-        setInterval(slideShow, 4000);
+    function juggleTheGallery() {
 
+        var buttonAll = $("*[data-rel='all']");
+        var buttonWeb = $("*[data-rel='web']");
+        var buttonApps = $("*[data-rel='apps']");
+        var buttonIcons = $("*[data-rel='icons']");
+
+        buttonAll.on("click", function () {
+            buttonApps.removeClass("buttonActive").addClass("button");
+            buttonIcons.removeClass("buttonActive");
+            buttonIcons.addClass("button");
+            buttonWeb.removeClass("buttonActive");
+            buttonWeb.addClass("button");
+            $(this).addClass("buttonActive");
+            $(this).removeClass("button");
+            $("div.img").show(1000);
+        });
+
+        buttonWeb.on("click", function () {
+            $(this).addClass("buttonActive");
+            $(this).removeClass("button");
+            buttonAll.removeClass("buttonActive");
+            buttonAll.addClass("button");
+            buttonApps.removeClass("buttonActive");
+            buttonApps.addClass("button");
+            buttonIcons.removeClass("buttonActive");
+            buttonIcons.addClass("button");
+            $("div.img").hide(1000);
+            $(".web").show(1000);
+        });
+
+        buttonApps.on("click", function () {
+            $(this).addClass("buttonActive");
+            $(this).removeClass("button");
+            buttonAll.removeClass("buttonActive");
+            buttonAll.addClass("button");
+            buttonWeb.removeClass("buttonActive");
+            buttonWeb.addClass("button");
+            buttonIcons.removeClass("buttonActive");
+            buttonIcons.addClass("button");
+            $("div.img").hide(1000);
+            $(".apps").show(1000);
+        });
+
+        buttonIcons.on("click", function () {
+            $(this).addClass("buttonActive");
+            $(this).removeClass("button");
+            buttonAll.removeClass("buttonActive");
+            buttonAll.addClass("button");
+            buttonWeb.removeClass("buttonActive");
+            buttonWeb.addClass("button");
+            buttonApps.removeClass("buttonActive");
+            buttonApps.addClass("button");
+            $("div.img").hide(1000);
+            $(".icons").show(1000);
+        })
 
     }
 
+    function makeCuteFancybox() {
+
+        var thumbnail1 = $(".img1 .divCaption");
+        var thumbnail2 = $(".img2 .divCaption");
+        var thumbnail3 = $(".img3 .divCaption");
+        var thumbnail4 = $(".img4 .divCaption");
+        var thumbnail5 = $(".img5 .divCaption");
+        var thumbnail6 = $(".img6 .divCaption");
+
+
+        var buttonClose = $(".toHome");
+
+
+        thumbnail1.on("click", function () {
+            $(".overlay1").css("display", "block");
+        });
+
+        buttonClose.on("click", function (event) {
+            event.preventDefault();
+            $(".overlay1").css("display", "none");
+        });
+
+        thumbnail2.on("click", function () {
+            $(".overlay2").css("display", "block");
+        })
+
+        buttonClose.on("click", function (event) {
+            event.preventDefault();
+            $(".overlay2").css("display", "none");
+        });
+
+        thumbnail3.on("click", function () {
+            $(".overlay3").css("display", "block");
+        })
+
+        buttonClose.on("click", function (event) {
+            event.preventDefault();
+            $(".overlay3").css("display", "none");
+        });
+
+        thumbnail4.on("click", function () {
+            $(".overlay4").css("display", "block");
+        })
+
+        buttonClose.on("click", function (event) {
+            event.preventDefault();
+            $(".overlay4").css("display", "none");
+        });
+
+        thumbnail5.on("click", function () {
+            $(".overlay5").css("display", "block");
+        })
+
+        buttonClose.on("click", function (event) {
+            event.preventDefault();
+            $(".overlay5").css("display", "none");
+        });
+
+        thumbnail6.on("click", function () {
+            $(".overlay6").css("display", "block");
+        })
+
+        buttonClose.on("click", function (event) {
+            event.preventDefault();
+            $(".overlay6").css("display", "none");
+        });
+    }
+
+    function init() {
+        setInterval(slideShow, 4000);
+    }
 
     return {
         replaceImg: replaceImg,
@@ -217,12 +343,16 @@ var Application = function() {
         animateAnchors: animateAnchors,
         makeSticky: makeSticky,
         makeCarousel: makeCarousel,
-        slideShow: slideShow
+        slideShow: slideShow,
+        juggleTheGallery: juggleTheGallery,
+        makeCuteFancybox: makeCuteFancybox,
+        init: init
     }
 };
 
 var app = new Application();
 
+app.init();
 app.replaceImg();
 app.replaceFeatureImg();
 app.replaceArrow();
@@ -230,6 +360,11 @@ app.animateAnchors();
 app.makeSticky();
 app.makeCarousel();
 app.slideShow();
+app.juggleTheGallery();
+app.makeCuteFancybox();
+
+
+
 
 
 

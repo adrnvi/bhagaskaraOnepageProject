@@ -735,10 +735,10 @@
 
             <div class="col-6 icons">
 
-                <a class="buttonActive" href="#">all</a>
-                <a class="button" href="#">web</a>
-                <a class="button" href="#">apps</a>
-                <a class="button" href="#">icon</a>
+                <a data-rel="all" class="filter buttonActive" href="javascript:;">all</a>
+                <a data-rel="web" class="filter button" href="javascript:;">web</a>
+                <a data-rel="apps" class="filter button" href="javascript:;">apps</a>
+                <a data-rel="icons" class="filter button" href="javascript:;">icons</a>
 
             </div>
 
@@ -748,65 +748,113 @@
 
         <div class="row clearfix portfolioImages">
 
-            <div class="col-4 img1">
-                <img src="img/natureImg.jpg">
+            <div class="col-4 img img1 apps" >
+                <img id="natureImg" src="img/natureImg.jpg">
                 <p>Neque Porro Quisquam</p>
-                <footer>apps, icons, ui</footer>
-                <div class="divCaption">
+                <footer>apps</footer>
+                <a href="#portfolio"><div class="divCaption">
                     <span></span>
-                </div>
+                </div></a>
             </div>
 
-            <div class="col-4 img2">
+            <div class="overlay1">
+
+                <a href="#" class="toHome">Close</a>
+
+                <img src="img/natureImg.jpg">
+
+            </div>
+
+            <div class="col-4 img img2 apps icons">
                 <img src="img/tunel.jpg">
                 <p>Neque Porro Quisquam</p>
-                <footer>apps, icons, ui</footer>
-                <div class="divCaption">
+                <footer>apps, icons</footer>
+                <a href="#portfolio"><div class="divCaption">
                     <span></span>
-                </div>
+                </div></a>
             </div>
 
-            <div class="col-4 img3">
+            <div class="overlay2">
+
+                <a href="#" class="toHome">Close</a>
+
+                <img src="img/tunel.jpg">
+
+            </div>
+
+            <div class="col-4 img img3 web icons">
                 <img src="img/cityLights.jpg">
                 <p>Neque Porro Quisquam</p>
-                <footer>apps, icons, ui</footer>
-                <div class="divCaption">
+                <footer>icons, web</footer>
+                <a href="#portfolio"><div class="divCaption">
                     <span></span>
-                </div>
+                </div></a>
             </div>
 
-        </div>
+            <div class="overlay3">
 
-        <div class="row clearfix portfolioImages">
+                <a href="#" class="toHome">Close</a>
 
-            <div class="col-4 img4">
-                <img src="img/water.jpg">
+                <img src="img/cityLights.jpg">
+
+            </div>
+
+
+
+            <div class="col-4 img img4 web">
+               <img src="img/water.jpg">
                 <p>Neque Porro Quisquam</p>
-                <footer>apps, icons, ui</footer>
-                <div class="divCaption">
+                <footer>web</footer>
+                <a href="#portfolio"><div class="divCaption">
                     <span></span>
-                </div>
+                </div></a>
             </div>
 
-            <div class="col-4 img5">
+            <div class="overlay4">
+
+                <a href="#" class="toHome">Close</a>
+
+                <img src="img/water.jpg">
+
+            </div>
+
+            <div class="col-4 img img5 apps">
                 <img src="img/cleanWater.jpg">
                 <p>Neque Porro Quisquam</p>
-                <footer>apps, icons, ui</footer>
-                <div class="divCaption">
+                <footer>apps</footer>
+                <a href="#portfolio"><div class="divCaption">
                     <span></span>
-                </div>
+                </div></a>
             </div>
 
-            <div class="col-4 img6">
+            <div class="overlay5">
+
+                <a href="#" class="toHome">Close</a>
+
+                <img src="img/cleanWater.jpg">
+
+            </div>
+
+            <div class="col-4 img img6 web icons">
                 <img class="thumbnail" src="img/bench.jpg">
                 <p>Neque Porro Quisquam</p>
-                <footer>apps, icons, ui</footer>
-                <div class="divCaption">
+                <footer>web, icons</footer>
+                <a href="#portfolio"><div class="divCaption">
                     <span></span>
-                </div>
+                </div></a>
+            </div>
+
+            <div class="overlay6">
+
+                <a href="#" class="toHome">Close</a>
+
+                <img src="img/bench.jpg">
+
             </div>
 
         </div>
+
+
 
         <div class="row clearfix">
 
@@ -880,6 +928,8 @@
     <div class="toTop"><a href="#topOfPage"><img src="img/to-top1.png"></a></div>
 
 </section>
+
+
 
 </body>
 

@@ -50,9 +50,6 @@ body {
 .personThreeSkills {
   display: none; }
 
-.sliderItem2, .sliderItem3, .sliderItem4, .sliderItem5, .sliderItem6 {
-  display: none; }
-
 /* my 12 column grid */
 .col-1 {
   width: calc(8.33% - 4px);
@@ -348,6 +345,8 @@ body {
     background-color: #9f449b;
     position: absolute;
     bottom: 15px; }
+    .aboutUs a.button:hover {
+      opacity: 0.9; }
   .aboutUs .aboutUsText {
     position: relative;
     line-height: 2; }
@@ -560,7 +559,7 @@ body {
       display: block; }
   .ourPortfolio .portfolioImages .divCaption {
     display: none;
-    top: 0px;
+    top: 0;
     width: 100%;
     position: absolute;
     background: rgba(86, 93, 103, 0.48) none repeat scroll 0% 0%;
@@ -574,7 +573,7 @@ body {
       text-align: center;
       position: absolute;
       top: 34%;
-      right: 36%; }
+      right: 35%; }
   .ourPortfolio .portfolioImages p {
     font-size: 1.3em;
     color: #000;
@@ -589,6 +588,8 @@ body {
   .ourPortfolio .portfolioButton a {
     width: 175px;
     padding: 22px 0 22px 0; }
+    .ourPortfolio .portfolioButton a:hover {
+      opacity: 0.9; }
 
 .mainFooter .socialIcon {
   height: 70px;
@@ -619,6 +620,8 @@ body {
   width: 200px;
   padding: 20px 25px;
   font-weight: 400; }
+  .mainFooter .ourPortfolio .portfolioButton a:hover, .ourPortfolio .portfolioButton .mainFooter a:hover, .mainFooter .buttonActive:hover {
+    opacity: 0.9; }
 .mainFooter .footerInfo p {
   font-size: 1.3em;
   margin: 0 0 40px 0;
@@ -627,10 +630,21 @@ body {
   font-size: 1.5em;
   font-weight: 400; }
 
+.toTop {
+  position: fixed;
+  bottom: 6px;
+  right: 36px; }
+  .toTop img {
+    height: 34px;
+    width: 34px; }
+
 /* responsive styles */
 @media (max-width: 1020px) {
   h3 {
     margin: 50px 0 50px 0 !important; }
+
+  .slider {
+    display: none; }
 
   .ourTeam {
     margin: 0 0 50px 0; }
@@ -652,6 +666,9 @@ body {
     left: 27px !important;
     top: 17px !important; } }
 @media (max-width: 900px) {
+  .slider {
+    display: none; }
+
   h3 {
     margin: 30px 0 30px 0 !important; }
 
@@ -659,7 +676,7 @@ body {
     margin: 0 0 30px 0; }
 
   body {
-    font-size: 0.8em; }
+    font-size: 1em; }
 
   .container {
     width: 600px; }
@@ -704,6 +721,18 @@ body {
       left: 24px !important;
       top: 17px !important; } }
 @media (max-width: 630px) {
+  .ourServices .col-2 {
+    width: 100%;
+    float: none; }
+  .ourServices .servicesInNumbers {
+    padding: 50px 0 0 0; }
+
+  .toTop {
+    display: none; }
+
+  .slider {
+    display: none; }
+
   h3 {
     margin: 10px 0 10px 0 !important; }
 
@@ -711,7 +740,7 @@ body {
     margin: 0 0 10px 0; }
 
   body {
-    font-size: 0.7em; }
+    font-size: 0.8em; }
 
   .greyCircle {
     width: 90px;
@@ -773,12 +802,5 @@ body {
       width: 40px;
       left: 10px !important;
       top: 18px !important; } }
-.toTop {
-  position: fixed;
-  bottom: 6px;
-  right: 36px; }
-  .toTop img {
-    height: 34px;
-    width: 34px; }
 
 /*# sourceMappingURL=main.css.map */
